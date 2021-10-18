@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="haebhin" content="HTML, meta, tag, element, reference">
+    <meta name="description"  content="HTML meta tag page">
+    <meta name="author" content="haebhin">
+    <meta name="viewport" content="width=device-width, initial-scasle=1.0">
+    <!--폰트 어썸 연결-->
+    <script src="https://kit.fontawesome.com/1ec90339f6.js" crossorigin="anonymous"></script>
+    <!--외부링크 연결-->
+    <link rel="stylesheet" href="main2.css">
+    <style>
+       .k
+       {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #1C1C1C;
+        color: white;
+        width: 1884px;
+        margin: -10px -8px;
+        padding: 0px 10px 0px 10px;
+        }
+        .ma
+        {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        margin: 0px 80px 0px 0px;
+        background-color: #1C1C1C;
+        color: white;
+        font-size: 23px;
+        font-weight: 700;
+        }
+       
+       
+        .drop2
+        {
+            list-style: none; 
+            position: absolute;
+            background-color: #1C1C1C;
+            color: white;
+            margin: 30px 0px;
+            font-size: 18px;
+            text-align: center;
+            width: 90px;
+            
+        }
+
+
+
+        .titan{margin: 0px 100px 0px 0px;}
+        .empty
+        {
+            width: 350px;
+            height: 50px;
+        }
+        .empty2
+        {
+            width: 300px;
+            height: 50px;
+        }
+
+        .reservationback
+        {
+            width: 1900px;
+            height: 880px;
+            margin-left: -8px;
+            margin-top: 5px;
+            border: black solid 2px;
+           
+        }
+        .reservationmain
+        {
+            display: flex;
+            margin: 50px 50px;
+            width: 1802px;
+            height: 780px;
+        }
+        .reservation
+        {   
+            display: flex;
+            border: black solid 3px ;
+            width: 1101px;
+            height: 780px;
+            margin-left: -3px;
+        }
+        .reservation1
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 500px;
+            height: 600px;
+            border: black solid 2px;
+            margin-left: 50px;
+        }
+        .reservation2
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 500px;
+            height: 600px;
+            border: black solid 2px;
+        }
+
+        .info
+        {
+            border: black solid 3px;
+            width: 701px;
+            height: 780px;
+        }
+
+        .calendar
+        {
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+        }
+        .datepic
+        {
+            width: 150px;
+            height: 50px;
+            background-image: url(image/date.png);
+        }
+        .numberpic
+        {
+            width: 150px;
+            height: 50px;
+            background-image: url(image/number.png);
+        }
+        .namepic
+        {
+            width: 150px;
+            height: 50px;
+            background-image: url(image/name.png);
+        }
+    </style>    
+</head>
+
+<body>
+    <div class="k" >     <!--헤더-->
+        <div class="empty"></div>
+        <a href="mainpage.html" class="titan" ><h1>식당</h1></a>
+        <div class="empty2"></div>
+        <div class="ma">
+            <a href="#" class="drop1">메뉴
+                <ul  class="drop2">
+                    <li><a href="#">스테이크</a></li>
+                    <li><a href="#">버거</a></li>
+                    <li><a href="#">사이드</a></li>
+                    <li><a href="#">음료</a></li>
+                </ul>
+            </a>
+
+        </div>
+        <a href="reservation.html" class="ma">예약</a>
+        <a href="contact.html" class="ma">오시는 길</a>
+        <a href="#" class="ma">게시판</a>
+    </div > <!--헤더 끝-->
+    <div class="reservationback">
+        <div class="reservationmain">
+            <div class="reservation">
+                <div class="reservation1">
+                    <div class="datepic"></div>
+                    <input type="date" class="calendar" name="date" placeholder="날짜를 선택해주세요">
+                    <div class="numberpic"></div>
+                    <input type="number" class="calendar" min="1" max="6" name="number" placeholder="인원을 입력해주세요">
+                    <div class="namepic"></div>
+                    <input type="text" class="calendar" name="name" placeholder="성함을 입력해주세요">
+                </div>
+                <div class="reservation2"></div>
+            </div>
+            <div class="info"></div>
+        </div>
+
+
+</body>
+</html>

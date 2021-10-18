@@ -22,7 +22,7 @@
         margin: -10px -8px;
         padding: 0px 10px 0px 10px;
         }
-        .a
+        .ma
         {
         display: flex;
         justify-content: center;
@@ -32,7 +32,24 @@
         color: white;
         font-size: 23px;
         font-weight: 700;
-    }
+        }
+       
+       
+        .drop2
+        {
+            list-style: none; 
+            position: absolute;
+            background-color: #1C1C1C;
+            color: white;
+            margin: 30px 0px;
+            font-size: 18px;
+            text-align: center;
+            width: 90px;
+            
+        }
+
+
+
         .titan{margin: 0px 100px 0px 0px;}
         .empty
         {
@@ -47,7 +64,7 @@
         
         .body
        {
-        background-image: url(image/rebackground.jpg); background-repeat: no-repeat; background-origin: border-box; background-size: 100% 100%;
+        background-image: url(image/bar-826688.jpg); background-repeat: no-repeat; background-origin: border-box; background-size: 100% 100%;
         height: 880px;
         width: 900px;
         display: flex;
@@ -56,7 +73,7 @@
         font-size: 100px;
             letter-spacing: 20px;
             font-weight: 800;
-            color : black;
+            color : rgb(255, 255, 255);
             text-align:center;
             text-shadow: 3px 3px 3px grey;
        }
@@ -75,34 +92,56 @@
        }
        .manu
        {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
         height: 440px;
         width: 500px;
-        background-image: url(image/menu-g86665fa3b_1920.jpg); background-repeat: no-repeat; background-size: cover;
+        background-image: url(image/menu-3168414.jpg); background-repeat: no-repeat; background-size: cover;
         border: solid 3px black;
-        font-size: 100px;
+        font-size: 50px;
             letter-spacing: 20px;
             font-weight: 800;
             color : white;
-            text-align:center;
-
        }
+       .maueempty{height: 140px;}
+       .mauetext{text-align: center;}
        .reservation
        {
         height: 440px;
         width: 500px;
+        border: solid 3px black;
+        background-image: url(image/inscription-is-reserved.jpg);  background-size: 100%;
        }
        .contact
        {
+        margin: -3px 0px;
         height: 440px;
         width: 500px;
+        background-image: url(image/78957-OFNJZ7-835.jpg);
+        background-repeat: no-repeat;
+        border: solid 3px black;
+        background-size: 500px 440px;
+
        }
        .bord
        {
+        margin: -3px 0px;
         height: 440px;
         width: 500px;
+        background-image: url(image/bulletin-board-g014e0eadc_1920.jpg);
+        background-repeat: no-repeat;
+        border: solid 3px black;
+        background-size: 500px 440px;
+       }
+       .bordtext
+       {
+        text-align: center;
+        font-size: 70px;
+        letter-spacing: 20px;
+        font-weight: 800;
+        color : black;
+       }
+       .bordempty
+       {
+            height: 180px;
        }
     </style>
 </head>
@@ -111,15 +150,22 @@
 
     <div class="k" >     <!--헤더-->
         <div class="empty"></div>
-        <div class="titan" ><h1>식당</h1></div>
+        <a href="mainpage.html" class="titan" ><h1>식당</h1></a>
         <div class="empty2"></div>
-        <div class="a">
-            <div class="b">메뉴</div>
-            <div class="b">🔽</div>
+        <div class="ma">
+            <a href="#" class="drop1">메뉴
+                <ul  class="drop2">
+                    <li><a href="#">스테이크</a></li>
+                    <li><a href="#">버거</a></li>
+                    <li><a href="#">사이드</a></li>
+                    <li><a href="#">음료</a></li>
+                </ul>
+            </a>
+
         </div>
-        <div class="a">예약</div>
-        <div class="a">오시는 길</div>
-        <div class="a">게시판</div>
+        <a href="reservation.html" class="ma">예약</a>
+        <a href="contact.html" class="ma">오시는 길</a>
+        <a href="#" class="ma">게시판</a>
     </div > <!--헤더 끝-->
     
     
@@ -128,12 +174,23 @@
             <div>RESTAURANT</div>
         </div>
         <div class="main2">
-            <div class="manu"><div>메뉴</div></div>
-            <div class="reservation"></div>
+            <div class="manu" style="cursor: pointer;" onclick="location.href='#'">
+                <div class="maueempty"></div>
+                <div class="mauetext">스테이크</div>
+                <div class="mauetext">햄버거</div>
+                <div class="mauetext">사이드</div>
+                <div class="mauetext">음료</div>
+            </div>
+            <div class="contact" style="cursor: pointer;" onclick="location.href='contact.html'">
+                <div class="test"></div>
+            </div>
         </div>
         <div class="main2">
-            <div class="contact"></div>
-            <div class="bord"></div>
+            <div class="reservation" style="cursor: pointer;" onclick="location.href='#'"></div>
+            <div class="bord" style="cursor: pointer;" onclick="location.href='#'">
+                <div class="bordempty"></div>
+                <div class="bordtext">게  시  판</div>
+            </div>
         </div>
     </div>
    </div>
